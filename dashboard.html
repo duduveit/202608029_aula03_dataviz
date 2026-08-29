@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Vendas por Estado e Região</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .tab-button {
+            padding: 12px 24px;
+            background: none;
+            border: none;
+            border-bottom: 3px solid transparent;
+            font-size: 1em;
+            cursor: pointer;
+            color: #666;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .tab-button:hover {
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+
+        .tab-button.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            color: #333;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card .value {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .chart-container {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .chart-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        #sunburst {
+            width: 100%;
+            height: 500px;
+        }
+
+        #treemap {
+            width: 100%;
+            height: 500px;
+        }
+
+        .sunburst-label {
+            font-size: 11px;
+            text-anchor: middle;
+            fill: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .detail-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .detail-item label {
+            display: block;
+            font-size: 0.85em;
+            opacity: 0.9;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .detail-item .value {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .breadcrumb {
+            background: #f0f0f0;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            color: #666;
+        }
+
+        .breadcrumb button {
+            background: none;
+            border: none;
+            color: #667eea;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: underline;
+            margin: 0 5px;
+        }
+
+        .breadcrumb button:hover {
+            text-decoration: none;
+        }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+        }
+
+        .tooltip {
+            position: absolute;
+            padding: 10px 15px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            border-radius: 5px;
+            font-size: 12px;
+            pointer-events: none;
+            z-index: 1000;
+            display: none;
+        }
+
+        .tooltip.show {
+            display: block;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        #barChart, #pieChart {
+            width: 100%;
+            height: 400px;
+        }
+
+        @media (max-width: 768px) {
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Dashboard de Vendas</h1>
+            <p>Análise Demográfica de Vendas por Estado e Região</p>
+        </div>
+
+        <div class="content">
+            <!-- Abas de navegação -->
+            <div class="tabs">
+                <button class="tab-button active" data-tab="overview">Visão Geral</button>
+                <button class="tab-button" data-tab="drill-down">Drill Down Interativo</button>
+                <button class="tab-button" data-tab="comparison">Comparação Regional</button>
+                <button class="tab-button" data-tab="details">Detalhes</button>
+            </div>
+
+            <!-- Tab 1: Overview -->
+            <div id="overview" class="tab-content active">
+                <div class="grid" id="metricas">
+                    <div class="card">
+                        <h3>Faturamento Total</h3>
+                        <div class="value" id="total-vendas">R$ 0</div>
+                    </div>
+                    <div class="card">
+                        <h3>Total de Pedidos</h3>
+                        <div class="value" id="total-pedidos">0</div>
+                    </div>
+                    <div class="card">
+                        <h3>Total de Clientes</h3>
+                        <div class="value" id="total-clientes">0</div>
+                    </div>
+                    <div class="card">
+                        <h3>Ticket Médio</h3>
+                        <div class="value" id="ticket-medio">R$ 0</div>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-title">Sunburst - Distribuição de Vendas por Região e Estado</div>
+                    <svg id="sunburst"></svg>
+                </div>
+            </div>
+
+            <!-- Tab 2: Drill Down -->
+            <div id="drill-down" class="tab-content">
+                <div class="breadcrumb" id="breadcrumb">
+                    <span>📍 Navegação:</span>
+                    <button onclick="voltarRegiao()">Regiões</button>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-title" id="drill-title">Estados por Região</div>
+                    <svg id="treemap"></svg>
+                </div>
+
+                <div class="details" id="drill-details">
+                    <div class="detail-item">
+                        <label>Faturamento</label>
+                        <div class="value" id="drill-vendas">R$ 0</div>
+                    </div>
+                    <div class="detail-item">
+                        <label>Pedidos</label>
+                        <div class="value" id="drill-pedidos">0</div>
+                    </div>
+                    <div class="detail-item">
+                        <label>Clientes</label>
+                        <div class="value" id="drill-clientes">0</div>
+                    </div>
+                    <div class="detail-item">
+                        <label>Ticket Médio</label>
+                        <div class="value" id="drill-ticket">R$ 0</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: Comparison -->
+            <div id="comparison" class="tab-content">
+                <div class="chart-container">
+                    <div class="chart-title">Vendas por Região</div>
+                    <svg id="barChart"></svg>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-title">Distribuição de Clientes</div>
+                    <svg id="pieChart"></svg>
+                </div>
+            </div>
+
+            <!-- Tab 4: Details -->
+            <div id="details" class="tab-content">
+                <div class="chart-container">
+                    <div class="chart-title">Ranking de Estados por Faturamento</div>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr style="background: #667eea; color: white;">
+                                <th style="padding: 12px; text-align: left;">Região</th>
+                                <th style="padding: 12px; text-align: left;">Estado</th>
+                                <th style="padding: 12px; text-align: right;">Faturamento</th>
+                                <th style="padding: 12px; text-align: right;">Pedidos</th>
+                                <th style="padding: 12px; text-align: right;">Clientes</th>
+                                <th style="padding: 12px; text-align: right;">Ticket Médio</th>
+                            </tr>
+                        </thead>
+                        <tbody id="detailsTable">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+        // Variáveis globais
+        let dados = {};
+        let nivelAtual = 'regiao';
+        let regiaoSelecionada = null;
+
+        // Cores para as regiões
+        const cores = {
+            'Norte': '#FF6B6B',
+            'Nordeste': '#4ECDC4',
+            'Centro-Oeste': '#45B7D1',
+            'Sudeste': '#FFA07A',
+            'Sul': '#98D8C8'
+        };
+
+        // Carregar dados
+        fetch('dados_vendas.json')
+            .then(response => response.json())
+            .then(data => {
+                dados = data;
+                inicializar();
+            })
+            .catch(error => console.error('Erro ao carregar dados:', error));
+
+        function inicializar() {
+            atualizarMetricasGerais();
+            criarSunburst();
+            criarTreemapRegiao();
+            criarBarChart();
+            criarPieChart();
+            preencherTabela();
+            configurarAbas();
+        }
+
+        function atualizarMetricasGerais() {
+            let totalVendas = 0, totalPedidos = 0, totalClientes = 0;
+
+            for (let regiao in dados) {
+                totalVendas += dados[regiao].vendas;
+                totalPedidos += dados[regiao].pedidos;
+                totalClientes += dados[regiao].clientes;
+            }
+
+            const ticketMedio = totalVendas / totalPedidos;
+
+            document.getElementById('total-vendas').textContent = `R$ ${(totalVendas / 1000000).toFixed(1)}M`;
+            document.getElementById('total-pedidos').textContent = (totalPedidos / 1000).toFixed(1) + 'k';
+            document.getElementById('total-clientes').textContent = (totalClientes / 1000).toFixed(1) + 'k';
+            document.getElementById('ticket-medio').textContent = `R$ ${ticketMedio.toFixed(2)}`;
+
+            // Salvar para detalhes de drill-down
+            document.getElementById('drill-vendas').textContent = `R$ ${(totalVendas / 1000000).toFixed(1)}M`;
+            document.getElementById('drill-pedidos').textContent = (totalPedidos / 1000).toFixed(1) + 'k';
+            document.getElementById('drill-clientes').textContent = (totalClientes / 1000).toFixed(1) + 'k';
+            document.getElementById('drill-ticket').textContent = `R$ ${ticketMedio.toFixed(2)}`;
+        }
+
+        function criarSunburst() {
+            const largura = document.getElementById('sunburst').parentElement.offsetWidth;
+            const altura = 500;
+            const raio = Math.min(largura, altura) / 2 - 10;
+
+            const svg = d3.select('#sunburst')
+                .attr('width', largura)
+                .attr('height', altura)
+                .append('g')
+                .attr('transform', `translate(${largura / 2},${altura / 2})`);
+
+            // Preparar dados hierárquicos
+            const raiz = {
+                name: 'Brasil',
+                children: []
+            };
+
+            for (let regiao in dados) {
+                raiz.children.push({
+                    name: regiao,
+                    value: dados[regiao].vendas,
+                    children: dados[regiao].estados.map(e => ({
+                        name: e.nome,
+                        value: e.vendas
+                    }))
+                });
+            }
+
+            const hierarchy = d3.hierarchy(raiz)
+                .sum(d => d.value)
+                .sort((a, b) => b.value - a.value);
+
+            const partition = d3.partition()
+                .size([2 * Math.PI, raio]);
+
+            const nodes = partition(hierarchy).descendants();
+
+            const arc = d3.arc()
+                .startAngle(d => d.x0)
+                .endAngle(d => d.x1)
+                .innerRadius(d => d.y0)
+                .outerRadius(d => d.y1);
+
+            const slices = svg.selectAll('path')
+                .data(nodes)
+                .join('path')
+                .attr('d', arc)
+                .attr('fill', d => {
+                    if (d.depth === 0) return '#fff';
+                    if (d.depth === 1) return cores[d.data.name] || '#999';
+                    return d3.color(cores[d.parent.data.name]).darker(0.5);
+                })
+                .attr('stroke', 'white')
+                .attr('stroke-width', 2)
+                .on('mouseover', function(event, d) {
+                    d3.select(this).attr('opacity', 0.8);
+                    mostrarTooltip(event, `${d.data.name}<br/>R$ ${(d.value / 1000000).toFixed(2)}M`);
+                })
+                .on('mousemove', function(event) {
+                    atualizarTooltip(event);
+                })
+                .on('mouseout', function() {
+                    d3.select(this).attr('opacity', 1);
+                    ocultarTooltip();
+                });
+
+            svg.selectAll('text')
+                .data(nodes)
+                .join('text')
+                .attr('transform', d => {
+                    const angle = (d.x0 + d.x1) / 2;
+                    const radius = (d.y0 + d.y1) / 2;
+                    return `
+                        rotate(${angle * 180 / Math.PI - 90})
+                        translate(${radius}, 0)
+                        rotate(${angle > Math.PI ? 180 : 0})
+                    `;
+                })
+                .attr('text-anchor', d => d.x0 + d.x1 > 2 * Math.PI ? 'end' : 'start')
+                .attr('dy', '0.31em')
+                .attr('class', 'sunburst-label')
+                .text(d => d.depth === 1 ? d.data.name : (d.depth === 2 ? d.data.name : ''));
+        }
+
+        function criarTreemapRegiao() {
+            const largura = document.getElementById('treemap').parentElement.offsetWidth;
+            const altura = 500;
+
+            const svg = d3.select('#treemap')
+                .attr('width', largura)
+                .attr('height', altura);
+
+            svg.selectAll('*').remove();
+
+            const g = svg.append('g');
+
+            // Preparar dados
+            const dados_atual = nivelAtual === 'regiao' && !regiaoSelecionada 
+                ? Object.keys(dados).map(r => ({
+                    name: r,
+                    value: dados[r].vendas,
+                    pedidos: dados[r].pedidos,
+                    clientes: dados[r].clientes,
+                    tipo: 'regiao',
+                    dados_completos: dados[r]
+                  }))
+                : regiaoSelecionada 
+                    ? dados[regiaoSelecionada].estados.map(e => ({
+                        name: e.nome,
+                        value: e.vendas,
+                        pedidos: e.pedidos,
+                        clientes: e.clientes,
+                        tipo: 'estado',
+                        dados_completos: e
+                      }))
+                    : [];
+
+            const raiz = d3.hierarchy({name: 'root', children: dados_atual})
+                .sum(d => d.value)
+                .sort((a, b) => b.value - a.value);
+
+            const treemapLayout = d3.treemap()
+                .size([largura, altura])
+                .paddingTop(0)
+                .paddingRight(1)
+                .paddingBottom(1)
+                .paddingLeft(1);
+
+            const nodes = treemapLayout(raiz).leaves();
+
+            const cells = g.selectAll('g')
+                .data(nodes)
+                .join('g')
+                .attr('transform', d => `translate(${d.x0},${d.y0})`);
+
+            cells.append('rect')
+                .attr('width', d => d.x1 - d.x0)
+                .attr('height', d => d.y1 - d.y0)
+                .attr('fill', d => cores[d.data.name] || '#999')
+                .attr('stroke', 'white')
+                .attr('stroke-width', 2)
+                .on('click', function(event, d) {
+                    if (d.data.tipo === 'regiao') {
+                        regiaoSelecionada = d.data.name;
+                        nivelAtual = 'estado';
+                        atualizarBreadcrumb();
+                        criarTreemapRegiao();
+                        atualizarDetalhes(d.data.dados_completos);
+                    }
+                })
+                .style('cursor', d => d.data.tipo === 'regiao' ? 'pointer' : 'default')
+                .on('mouseover', function() {
+                    d3.select(this).attr('opacity', 0.8);
+                })
+                .on('mousemove', function(event, d) {
+                    mostrarTooltip(event, `${d.data.name}<br/>R$ ${(d.value / 1000000).toFixed(2)}M<br/>Pedidos: ${d.data.pedidos}`);
+                })
+                .on('mouseout', function() {
+                    d3.select(this).attr('opacity', 1);
+                    ocultarTooltip();
+                });
+
+            cells.append('text')
+                .attr('x', 5)
+                .attr('y', 25)
+                .attr('font-size', '14px')
+                .attr('font-weight', 'bold')
+                .attr('fill', 'white')
+                .attr('text-shadow', '1px 1px 3px rgba(0,0,0,0.5)')
+                .text(d => d.data.name);
+
+            cells.append('text')
+                .attr('x', 5)
+                .attr('y', 45)
+                .attr('font-size', '12px')
+                .attr('fill', 'white')
+                .attr('text-shadow', '1px 1px 3px rgba(0,0,0,0.5)')
+                .text(d => `R$ ${(d.value / 1000000).toFixed(2)}M`);
+
+            document.getElementById('drill-title').textContent = 
+                regiaoSelecionada ? `Cidades em ${regiaoSelecionada}` : 'Estados por Região';
+        }
+
+        function criarBarChart() {
+            const largura = document.getElementById('barChart').parentElement.offsetWidth;
+            const altura = 400;
+            const margin = {top: 20, right: 20, bottom: 80, left: 80};
+
+            const svg = d3.select('#barChart')
+                .attr('width', largura)
+                .attr('height', altura);
+
+            svg.selectAll('*').remove();
+
+            const dados_regioes = Object.keys(dados).map(r => ({
+                nome: r,
+                vendas: dados[r].vendas
+            }));
+
+            const x = d3.scaleBand()
+                .domain(dados_regioes.map(d => d.nome))
+                .range([margin.left, largura - margin.right])
+                .padding(0.1);
+
+            const y = d3.scaleLinear()
+                .domain([0, d3.max(dados_regioes, d => d.vendas)])
+                .range([altura - margin.bottom, margin.top]);
+
+            svg.selectAll('rect')
+                .data(dados_regioes)
+                .join('rect')
+                .attr('x', d => x(d.nome))
+                .attr('y', d => y(d.vendas))
+                .attr('width', x.bandwidth())
+                .attr('height', d => altura - margin.bottom - y(d.vendas))
+                .attr('fill', d => cores[d.nome])
+                .on('mousemove', function(event, d) {
+                    mostrarTooltip(event, `${d.nome}<br/>R$ ${(d.vendas / 1000000).toFixed(2)}M`);
+                })
+                .on('mouseout', ocultarTooltip);
+
+            svg.append('g')
+                .attr('transform', `translate(0,${altura - margin.bottom})`)
+                .call(d3.axisBottom(x))
+                .attr('font-size', '12px');
+
+            svg.append('g')
+                .attr('transform', `translate(${margin.left},0)`)
+                .call(d3.axisLeft(y).tickFormat(d => `R$ ${d / 1000000}M`))
+                .attr('font-size', '12px');
+        }
+
+        function criarPieChart() {
+            const largura = document.getElementById('pieChart').parentElement.offsetWidth;
+            const altura = 400;
+            const raio = Math.min(largura, altura) / 2 - 20;
+
+            const svg = d3.select('#pieChart')
+                .attr('width', largura)
+                .attr('height', altura)
+                .append('g')
+                .attr('transform', `translate(${largura / 2},${altura / 2})`);
+
+            const dados_regioes = Object.keys(dados).map(r => ({
+                nome: r,
+                clientes: dados[r].clientes
+            }));
+
+            const pie = d3.pie().value(d => d.clientes);
+            const arcs = d3.arc().innerRadius(0).outerRadius(raio);
+
+            svg.selectAll('path')
+                .data(pie(dados_regioes))
+                .join('path')
+                .attr('d', arcs)
+                .attr('fill', d => cores[d.data.nome])
+                .attr('stroke', 'white')
+                .attr('stroke-width', 2)
+                .on('mousemove', function(event, d) {
+                    const percentual = ((d.data.clientes / d3.sum(dados_regioes, d => d.clientes)) * 100).toFixed(1);
+                    mostrarTooltip(event, `${d.data.nome}<br/>${d.data.clientes.toLocaleString('pt-BR')} clientes<br/>${percentual}%`);
+                })
+                .on('mouseout', ocultarTooltip);
+
+            svg.selectAll('text')
+                .data(pie(dados_regioes))
+                .join('text')
+                .attr('transform', d => `translate(${arcs.centroid(d)})`)
+                .attr('text-anchor', 'middle')
+                .attr('font-size', '14px')
+                .attr('font-weight', 'bold')
+                .attr('fill', 'white')
+                .attr('text-shadow', '1px 1px 3px rgba(0,0,0,0.5)')
+                .text(d => `${((d.data.clientes / d3.sum(dados_regioes, d => d.clientes)) * 100).toFixed(0)}%`);
+        }
+
+        function preencherTabela() {
+            const tbody = document.getElementById('detailsTable');
+            const linhas = [];
+
+            for (let regiao in dados) {
+                for (let estado of dados[regiao].estados) {
+                    linhas.push({
+                        regiao,
+                        estado: estado.nome,
+                        vendas: estado.vendas,
+                        pedidos: estado.pedidos,
+                        clientes: estado.clientes,
+                        ticket: estado.ticket_medio
+                    });
+                }
+            }
+
+            linhas.sort((a, b) => b.vendas - a.vendas);
+
+            tbody.innerHTML = linhas.map((linha, index) => `
+                <tr style="${index % 2 === 0 ? 'background: #f9f9f9;' : ''}">
+                    <td style="padding: 12px; border-bottom: 1px solid #ddd;">${linha.regiao}</td>
+                    <td style="padding: 12px; border-bottom: 1px solid #ddd; font-weight: bold;">${linha.estado}</td>
+                    <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: right;">R$ ${(linha.vendas / 1000000).toFixed(2)}M</td>
+                    <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: right;">${linha.pedidos.toLocaleString('pt-BR')}</td>
+                    <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: right;">${linha.clientes.toLocaleString('pt-BR')}</td>
+                    <td style="padding: 12px; border-bottom: 1px solid #ddd; text-align: right;">R$ ${linha.ticket.toFixed(2)}</td>
+                </tr>
+            `).join('');
+        }
+
+        function atualizarDetalhes(dados_item) {
+            if (dados_item) {
+                document.getElementById('drill-vendas').textContent = `R$ ${(dados_item.vendas / 1000000).toFixed(1)}M`;
+                document.getElementById('drill-pedidos').textContent = dados_item.pedidos.toLocaleString('pt-BR');
+                document.getElementById('drill-clientes').textContent = dados_item.clientes.toLocaleString('pt-BR');
+                const ticket = dados_item.vendas / dados_item.pedidos;
+                document.getElementById('drill-ticket').textContent = `R$ ${ticket.toFixed(2)}`;
+            }
+        }
+
+        function atualizarBreadcrumb() {
+            const breadcrumb = document.getElementById('breadcrumb');
+            if (regiaoSelecionada) {
+                breadcrumb.innerHTML = `
+                    <span>📍 Navegação:</span>
+                    <button onclick="voltarRegiao()">Regiões</button>
+                    <span> / ${regiaoSelecionada}</span>
+                `;
+            } else {
+                breadcrumb.innerHTML = `
+                    <span>📍 Navegação:</span>
+                    <button onclick="voltarRegiao()">Regiões</button>
+                `;
+            }
+        }
+
+        function voltarRegiao() {
+            regiaoSelecionada = null;
+            nivelAtual = 'regiao';
+            atualizarBreadcrumb();
+            criarTreemapRegiao();
+            atualizarMetricasGerais();
+        }
+
+        function mostrarTooltip(event, conteudo) {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.innerHTML = conteudo;
+            tooltip.classList.add('show');
+            atualizarTooltip(event);
+        }
+
+        function atualizarTooltip(event) {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.style.left = (event.pageX + 10) + 'px';
+            tooltip.style.top = (event.pageY + 10) + 'px';
+        }
+
+        function ocultarTooltip() {
+            document.getElementById('tooltip').classList.remove('show');
+        }
+
+        function configurarAbas() {
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remover classe active de todos os botões e conteúdos
+                    document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    
+                    // Adicionar classe active ao clicado
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        }
+
+        // Inicializar ao carregar a página
+        window.addEventListener('resize', () => {
+            if (dados && Object.keys(dados).length > 0) {
+                criarSunburst();
+                criarTreemapRegiao();
+                criarBarChart();
+                criarPieChart();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,2883 @@
+{
+  "regioes": {
+    "Norte": {
+      "pedidos": 1927,
+      "vendas": 414622.35,
+      "clientes": 1851,
+      "cidades": 201,
+      "taxa_entrega": 96.53874329411649,
+      "estados": [
+        {
+          "nome": "PA",
+          "pedidos": 1011,
+          "vendas": 218295.85,
+          "clientes": 975,
+          "ticket_medio": 215.92072205736895,
+          "cidades": 89,
+          "taxa_entrega": 97.03264094955489
+        },
+        {
+          "nome": "TO",
+          "pedidos": 301,
+          "vendas": 61485.33,
+          "clientes": 280,
+          "ticket_medio": 204.27019933554817,
+          "cidades": 56,
+          "taxa_entrega": 98.00664451827242
+        },
+        {
+          "nome": "RO",
+          "pedidos": 261,
+          "vendas": 60866.2,
+          "clientes": 253,
+          "ticket_medio": 233.2038314176245,
+          "cidades": 35,
+          "taxa_entrega": 96.16858237547893
+        },
+        {
+          "nome": "AM",
+          "pedidos": 154,
+          "vendas": 27966.93,
+          "clientes": 148,
+          "ticket_medio": 181.60344155844155,
+          "cidades": 5,
+          "taxa_entrega": 98.05194805194806
+        },
+        {
+          "nome": "AC",
+          "pedidos": 84,
+          "vendas": 19680.62,
+          "clientes": 81,
+          "ticket_medio": 234.29309523809525,
+          "cidades": 8,
+          "taxa_entrega": 98.80952380952381
+        },
+        {
+          "nome": "AP",
+          "pedidos": 70,
+          "vendas": 16262.8,
+          "clientes": 68,
+          "ticket_medio": 232.3257142857143,
+          "cidades": 6,
+          "taxa_entrega": 98.57142857142858
+        },
+        {
+          "nome": "RR",
+          "pedidos": 46,
+          "vendas": 10064.62,
+          "clientes": 46,
+          "ticket_medio": 218.79608695652175,
+          "cidades": 2,
+          "taxa_entrega": 89.13043478260869
+        }
+      ]
+    },
+    "Nordeste": {
+      "pedidos": 9907,
+      "vendas": 1898479.44,
+      "clientes": 9394,
+      "cidades": 1156,
+      "taxa_entrega": 96.33210319636493,
+      "estados": [
+        {
+          "nome": "BA",
+          "pedidos": 3610,
+          "vendas": 616645.82,
+          "clientes": 3380,
+          "ticket_medio": 170.8160166204986,
+          "cidades": 353,
+          "taxa_entrega": 96.4819944598338
+        },
+        {
+          "nome": "PE",
+          "pedidos": 1728,
+          "vendas": 324850.44,
+          "clientes": 1652,
+          "ticket_medio": 187.9921527777778,
+          "cidades": 152,
+          "taxa_entrega": 96.4699074074074
+        },
+        {
+          "nome": "CE",
+          "pedidos": 1398,
+          "vendas": 279464.03,
+          "clientes": 1336,
+          "ticket_medio": 199.90273962804005,
+          "cidades": 161,
+          "taxa_entrega": 95.92274678111588
+        },
+        {
+          "nome": "MA",
+          "pedidos": 767,
+          "vendas": 152523.02,
+          "clientes": 747,
+          "ticket_medio": 198.85661016949152,
+          "cidades": 122,
+          "taxa_entrega": 95.82790091264668
+        },
+        {
+          "nome": "PB",
+          "pedidos": 570,
+          "vendas": 141545.72,
+          "clientes": 536,
+          "ticket_medio": 248.32582456140352,
+          "cidades": 92,
+          "taxa_entrega": 96.66666666666667
+        },
+        {
+          "nome": "PI",
+          "pedidos": 524,
+          "vendas": 108523.97,
+          "clientes": 495,
+          "ticket_medio": 207.10681297709922,
+          "cidades": 72,
+          "taxa_entrega": 96.18320610687023
+        },
+        {
+          "nome": "RN",
+          "pedidos": 522,
+          "vendas": 102718.13,
+          "clientes": 485,
+          "ticket_medio": 196.77802681992338,
+          "cidades": 90,
+          "taxa_entrega": 97.89272030651341
+        },
+        {
+          "nome": "AL",
+          "pedidos": 427,
+          "vendas": 96962.06,
+          "clientes": 413,
+          "ticket_medio": 227.07742388758783,
+          "cidades": 68,
+          "taxa_entrega": 96.25292740046838
+        },
+        {
+          "nome": "SE",
+          "pedidos": 361,
+          "vendas": 75246.25,
+          "clientes": 350,
+          "ticket_medio": 208.43836565096953,
+          "cidades": 46,
+          "taxa_entrega": 95.29085872576178
+        }
+      ]
+    },
+    "Centro-Oeste": {
+      "pedidos": 6010,
+      "vendas": 1029797.52,
+      "clientes": 5782,
+      "cidades": 352,
+      "taxa_entrega": 96.77307121854923,
+      "estados": [
+        {
+          "nome": "DF",
+          "pedidos": 2204,
+          "vendas": 355141.08,
+          "clientes": 2140,
+          "ticket_medio": 161.13479128856625,
+          "cidades": 6,
+          "taxa_entrega": 97.1869328493648
+        },
+        {
+          "nome": "GO",
+          "pedidos": 2112,
+          "vendas": 350092.31,
+          "clientes": 2020,
+          "ticket_medio": 165.76340435606062,
+          "cidades": 178,
+          "taxa_entrega": 96.92234848484848
+        },
+        {
+          "nome": "MT",
+          "pedidos": 958,
+          "vendas": 187029.29,
+          "clientes": 907,
+          "ticket_medio": 195.22890396659707,
+          "cidades": 101,
+          "taxa_entrega": 94.88517745302714
+        },
+        {
+          "nome": "MS",
+          "pedidos": 736,
+          "vendas": 137534.84,
+          "clientes": 715,
+          "ticket_medio": 186.86798913043478,
+          "cidades": 67,
+          "taxa_entrega": 98.09782608695652
+        }
+      ]
+    },
+    "Sudeste": {
+      "pedidos": 71358,
+      "vendas": 10340831.46,
+      "clientes": 68265,
+      "cidades": 1618,
+      "taxa_entrega": 97.2020103058191,
+      "estados": [
+        {
+          "nome": "SP",
+          "pedidos": 43622,
+          "vendas": 5998226.96,
+          "clientes": 41745,
+          "ticket_medio": 137.50462977396725,
+          "cidades": 629,
+          "taxa_entrega": 96.98775847049654
+        },
+        {
+          "nome": "RJ",
+          "pedidos": 13527,
+          "vendas": 2144379.69,
+          "clientes": 12852,
+          "ticket_medio": 158.5258882235529,
+          "cidades": 149,
+          "taxa_entrega": 96.1336586087085
+        },
+        {
+          "nome": "MG",
+          "pedidos": 12102,
+          "vendas": 1872257.26,
+          "clientes": 11635,
+          "ticket_medio": 154.706433647331,
+          "cidades": 745,
+          "taxa_entrega": 97.53759709138986
+        },
+        {
+          "nome": "ES",
+          "pedidos": 2107,
+          "vendas": 325967.55,
+          "clientes": 2033,
+          "ticket_medio": 154.70695301376364,
+          "cidades": 95,
+          "taxa_entrega": 98.14902705268153
+        }
+      ]
+    },
+    "Sul": {
+      "pedidos": 14684,
+      "vendas": 2325141.35,
+      "clientes": 14148,
+      "cidades": 983,
+      "taxa_entrega": 97.60245530532431,
+      "estados": [
+        {
+          "nome": "RS",
+          "pedidos": 5668,
+          "vendas": 890898.54,
+          "clientes": 5466,
+          "ticket_medio": 157.18040578687368,
+          "cidades": 379,
+          "taxa_entrega": 97.81227946365561
+        },
+        {
+          "nome": "PR",
+          "pedidos": 5262,
+          "vendas": 811156.38,
+          "clientes": 5045,
+          "ticket_medio": 154.1536259977195,
+          "cidades": 364,
+          "taxa_entrega": 97.47244393766628
+        },
+        {
+          "nome": "SC",
+          "pedidos": 3754,
+          "vendas": 623086.43,
+          "clientes": 3637,
+          "ticket_medio": 165.97933670751198,
+          "cidades": 240,
+          "taxa_entrega": 97.52264251465104
+        }
+      ]
+    }
+  },
+  "estados_ranking": [
+    {
+      "nome": "SP",
+      "regiao": "Sudeste",
+      "pedidos": 43622,
+      "vendas": 5998226.96,
+      "clientes": 41745,
+      "ticket_medio": 137.50462977396725,
+      "cidades": 629,
+      "taxa_entrega": 96.98775847049654
+    },
+    {
+      "nome": "RJ",
+      "regiao": "Sudeste",
+      "pedidos": 13527,
+      "vendas": 2144379.69,
+      "clientes": 12852,
+      "ticket_medio": 158.5258882235529,
+      "cidades": 149,
+      "taxa_entrega": 96.1336586087085
+    },
+    {
+      "nome": "MG",
+      "regiao": "Sudeste",
+      "pedidos": 12102,
+      "vendas": 1872257.26,
+      "clientes": 11635,
+      "ticket_medio": 154.706433647331,
+      "cidades": 745,
+      "taxa_entrega": 97.53759709138986
+    },
+    {
+      "nome": "RS",
+      "regiao": "Sul",
+      "pedidos": 5668,
+      "vendas": 890898.54,
+      "clientes": 5466,
+      "ticket_medio": 157.18040578687368,
+      "cidades": 379,
+      "taxa_entrega": 97.81227946365561
+    },
+    {
+      "nome": "PR",
+      "regiao": "Sul",
+      "pedidos": 5262,
+      "vendas": 811156.38,
+      "clientes": 5045,
+      "ticket_medio": 154.1536259977195,
+      "cidades": 364,
+      "taxa_entrega": 97.47244393766628
+    },
+    {
+      "nome": "SC",
+      "regiao": "Sul",
+      "pedidos": 3754,
+      "vendas": 623086.43,
+      "clientes": 3637,
+      "ticket_medio": 165.97933670751198,
+      "cidades": 240,
+      "taxa_entrega": 97.52264251465104
+    },
+    {
+      "nome": "BA",
+      "regiao": "Nordeste",
+      "pedidos": 3610,
+      "vendas": 616645.82,
+      "clientes": 3380,
+      "ticket_medio": 170.8160166204986,
+      "cidades": 353,
+      "taxa_entrega": 96.4819944598338
+    },
+    {
+      "nome": "DF",
+      "regiao": "Centro-Oeste",
+      "pedidos": 2204,
+      "vendas": 355141.08,
+      "clientes": 2140,
+      "ticket_medio": 161.13479128856625,
+      "cidades": 6,
+      "taxa_entrega": 97.1869328493648
+    },
+    {
+      "nome": "GO",
+      "regiao": "Centro-Oeste",
+      "pedidos": 2112,
+      "vendas": 350092.31,
+      "clientes": 2020,
+      "ticket_medio": 165.76340435606062,
+      "cidades": 178,
+      "taxa_entrega": 96.92234848484848
+    },
+    {
+      "nome": "ES",
+      "regiao": "Sudeste",
+      "pedidos": 2107,
+      "vendas": 325967.55,
+      "clientes": 2033,
+      "ticket_medio": 154.70695301376364,
+      "cidades": 95,
+      "taxa_entrega": 98.14902705268153
+    },
+    {
+      "nome": "PE",
+      "regiao": "Nordeste",
+      "pedidos": 1728,
+      "vendas": 324850.44,
+      "clientes": 1652,
+      "ticket_medio": 187.9921527777778,
+      "cidades": 152,
+      "taxa_entrega": 96.4699074074074
+    },
+    {
+      "nome": "CE",
+      "regiao": "Nordeste",
+      "pedidos": 1398,
+      "vendas": 279464.03,
+      "clientes": 1336,
+      "ticket_medio": 199.90273962804005,
+      "cidades": 161,
+      "taxa_entrega": 95.92274678111588
+    },
+    {
+      "nome": "PA",
+      "regiao": "Norte",
+      "pedidos": 1011,
+      "vendas": 218295.85,
+      "clientes": 975,
+      "ticket_medio": 215.92072205736895,
+      "cidades": 89,
+      "taxa_entrega": 97.03264094955489
+    },
+    {
+      "nome": "MT",
+      "regiao": "Centro-Oeste",
+      "pedidos": 958,
+      "vendas": 187029.29,
+      "clientes": 907,
+      "ticket_medio": 195.22890396659707,
+      "cidades": 101,
+      "taxa_entrega": 94.88517745302714
+    },
+    {
+      "nome": "MA",
+      "regiao": "Nordeste",
+      "pedidos": 767,
+      "vendas": 152523.02,
+      "clientes": 747,
+      "ticket_medio": 198.85661016949152,
+      "cidades": 122,
+      "taxa_entrega": 95.82790091264668
+    },
+    {
+      "nome": "PB",
+      "regiao": "Nordeste",
+      "pedidos": 570,
+      "vendas": 141545.72,
+      "clientes": 536,
+      "ticket_medio": 248.32582456140352,
+      "cidades": 92,
+      "taxa_entrega": 96.66666666666667
+    },
+    {
+      "nome": "MS",
+      "regiao": "Centro-Oeste",
+      "pedidos": 736,
+      "vendas": 137534.84,
+      "clientes": 715,
+      "ticket_medio": 186.86798913043478,
+      "cidades": 67,
+      "taxa_entrega": 98.09782608695652
+    },
+    {
+      "nome": "PI",
+      "regiao": "Nordeste",
+      "pedidos": 524,
+      "vendas": 108523.97,
+      "clientes": 495,
+      "ticket_medio": 207.10681297709922,
+      "cidades": 72,
+      "taxa_entrega": 96.18320610687023
+    },
+    {
+      "nome": "RN",
+      "regiao": "Nordeste",
+      "pedidos": 522,
+      "vendas": 102718.13,
+      "clientes": 485,
+      "ticket_medio": 196.77802681992338,
+      "cidades": 90,
+      "taxa_entrega": 97.89272030651341
+    },
+    {
+      "nome": "AL",
+      "regiao": "Nordeste",
+      "pedidos": 427,
+      "vendas": 96962.06,
+      "clientes": 413,
+      "ticket_medio": 227.07742388758783,
+      "cidades": 68,
+      "taxa_entrega": 96.25292740046838
+    },
+    {
+      "nome": "SE",
+      "regiao": "Nordeste",
+      "pedidos": 361,
+      "vendas": 75246.25,
+      "clientes": 350,
+      "ticket_medio": 208.43836565096953,
+      "cidades": 46,
+      "taxa_entrega": 95.29085872576178
+    },
+    {
+      "nome": "TO",
+      "regiao": "Norte",
+      "pedidos": 301,
+      "vendas": 61485.33,
+      "clientes": 280,
+      "ticket_medio": 204.27019933554817,
+      "cidades": 56,
+      "taxa_entrega": 98.00664451827242
+    },
+    {
+      "nome": "RO",
+      "regiao": "Norte",
+      "pedidos": 261,
+      "vendas": 60866.2,
+      "clientes": 253,
+      "ticket_medio": 233.2038314176245,
+      "cidades": 35,
+      "taxa_entrega": 96.16858237547893
+    },
+    {
+      "nome": "AM",
+      "regiao": "Norte",
+      "pedidos": 154,
+      "vendas": 27966.93,
+      "clientes": 148,
+      "ticket_medio": 181.60344155844155,
+      "cidades": 5,
+      "taxa_entrega": 98.05194805194806
+    },
+    {
+      "nome": "AC",
+      "regiao": "Norte",
+      "pedidos": 84,
+      "vendas": 19680.62,
+      "clientes": 81,
+      "ticket_medio": 234.29309523809525,
+      "cidades": 8,
+      "taxa_entrega": 98.80952380952381
+    },
+    {
+      "nome": "AP",
+      "regiao": "Norte",
+      "pedidos": 70,
+      "vendas": 16262.8,
+      "clientes": 68,
+      "ticket_medio": 232.3257142857143,
+      "cidades": 6,
+      "taxa_entrega": 98.57142857142858
+    },
+    {
+      "nome": "RR",
+      "regiao": "Norte",
+      "pedidos": 46,
+      "vendas": 10064.62,
+      "clientes": 46,
+      "ticket_medio": 218.79608695652175,
+      "cidades": 2,
+      "taxa_entrega": 89.13043478260869
+    }
+  ],
+  "timeline": {
+    "2018-10-01": {
+      "PI": {
+        "pedidos": 1,
+        "vendas": 222.03
+      },
+      "RJ": {
+        "pedidos": 1,
+        "vendas": 80.38
+      },
+      "SP": {
+        "pedidos": 2,
+        "vendas": 287.26
+      }
+    },
+    "2018-09-01": {
+      "MG": {
+        "pedidos": 4,
+        "vendas": 582.16
+      },
+      "SP": {
+        "pedidos": 8,
+        "vendas": 3202.91
+      },
+      "RJ": {
+        "pedidos": 3,
+        "vendas": 240.43
+      },
+      "SC": {
+        "pedidos": 1,
+        "vendas": 414.04
+      }
+    },
+    "2018-08-01": {
+      "RS": {
+        "pedidos": 306,
+        "vendas": 52623.35
+      },
+      "PA": {
+        "pedidos": 44,
+        "vendas": 11053.07
+      },
+      "MT": {
+        "pedidos": 42,
+        "vendas": 5783.76
+      },
+      "MS": {
+        "pedidos": 35,
+        "vendas": 6551.94
+      },
+      "MG": {
+        "pedidos": 731,
+        "vendas": 115323.24
+      },
+      "MA": {
+        "pedidos": 30,
+        "vendas": 5325.36
+      },
+      "GO": {
+        "pedidos": 122,
+        "vendas": 21888.53
+      },
+      "ES": {
+        "pedidos": 106,
+        "vendas": 19563.44
+      },
+      "SC": {
+        "pedidos": 212,
+        "vendas": 44880.26
+      },
+      "SE": {
+        "pedidos": 23,
+        "vendas": 5600.79
+      },
+      "SP": {
+        "pedidos": 3337,
+        "vendas": 459934.71
+      },
+      "TO": {
+        "pedidos": 14,
+        "vendas": 2665.51
+      },
+      "RO": {
+        "pedidos": 10,
+        "vendas": 4539.05
+      },
+      "DF": {
+        "pedidos": 149,
+        "vendas": 23944.94
+      },
+      "CE": {
+        "pedidos": 59,
+        "vendas": 12704.03
+      },
+      "BA": {
+        "pedidos": 175,
+        "vendas": 27018.09
+      },
+      "AP": {
+        "pedidos": 2,
+        "vendas": 257.4
+      },
+      "AM": {
+        "pedidos": 4,
+        "vendas": 512.5
+      },
+      "AC": {
+        "pedidos": 3,
+        "vendas": 604.52
+      },
+      "AL": {
+        "pedidos": 16,
+        "vendas": 2913.71
+      },
+      "RN": {
+        "pedidos": 20,
+        "vendas": 5993.75
+      },
+      "RJ": {
+        "pedidos": 766,
+        "vendas": 113984.34
+      },
+      "PR": {
+        "pedidos": 348,
+        "vendas": 49978.16
+      },
+      "PI": {
+        "pedidos": 22,
+        "vendas": 3979.84
+      },
+      "PE": {
+        "pedidos": 88,
+        "vendas": 15478.29
+      },
+      "PB": {
+        "pedidos": 34,
+        "vendas": 9322.74
+      }
+    },
+    "2018-07-01": {
+      "PR": {
+        "pedidos": 326,
+        "vendas": 56466.54
+      },
+      "TO": {
+        "pedidos": 22,
+        "vendas": 3795.09
+      },
+      "SP": {
+        "pedidos": 2843,
+        "vendas": 383213.58
+      },
+      "SE": {
+        "pedidos": 30,
+        "vendas": 5999.63
+      },
+      "SC": {
+        "pedidos": 201,
+        "vendas": 37199.87
+      },
+      "RS": {
+        "pedidos": 327,
+        "vendas": 53276.46
+      },
+      "RR": {
+        "pedidos": 5,
+        "vendas": 1960.59
+      },
+      "RO": {
+        "pedidos": 17,
+        "vendas": 5249.38
+      },
+      "RN": {
+        "pedidos": 33,
+        "vendas": 9679.73
+      },
+      "RJ": {
+        "pedidos": 766,
+        "vendas": 121367.8
+      },
+      "PI": {
+        "pedidos": 34,
+        "vendas": 8471.11
+      },
+      "PE": {
+        "pedidos": 140,
+        "vendas": 30325.35
+      },
+      "PB": {
+        "pedidos": 53,
+        "vendas": 20455.11
+      },
+      "PA": {
+        "pedidos": 61,
+        "vendas": 15851.64
+      },
+      "MT": {
+        "pedidos": 48,
+        "vendas": 12645.68
+      },
+      "MS": {
+        "pedidos": 52,
+        "vendas": 8295.34
+      },
+      "MG": {
+        "pedidos": 681,
+        "vendas": 114678.94
+      },
+      "MA": {
+        "pedidos": 41,
+        "vendas": 8361.39
+      },
+      "GO": {
+        "pedidos": 118,
+        "vendas": 29374.82
+      },
+      "ES": {
+        "pedidos": 128,
+        "vendas": 33688.27
+      },
+      "DF": {
+        "pedidos": 170,
+        "vendas": 27296.87
+      },
+      "CE": {
+        "pedidos": 96,
+        "vendas": 17266.74
+      },
+      "BA": {
+        "pedidos": 263,
+        "vendas": 50813.63
+      },
+      "AP": {
+        "pedidos": 6,
+        "vendas": 1613.63
+      },
+      "AM": {
+        "pedidos": 18,
+        "vendas": 2598.41
+      },
+      "AL": {
+        "pedidos": 24,
+        "vendas": 4825.2
+      },
+      "AC": {
+        "pedidos": 4,
+        "vendas": 1769.95
+      }
+    },
+    "2018-06-01": {
+      "PE": {
+        "pedidos": 97,
+        "vendas": 18534.13
+      },
+      "TO": {
+        "pedidos": 32,
+        "vendas": 4987.03
+      },
+      "SP": {
+        "pedidos": 2867,
+        "vendas": 396564.63
+      },
+      "SE": {
+        "pedidos": 29,
+        "vendas": 5091.96
+      },
+      "SC": {
+        "pedidos": 215,
+        "vendas": 39055.27
+      },
+      "RS": {
+        "pedidos": 320,
+        "vendas": 53302.17
+      },
+      "RR": {
+        "pedidos": 5,
+        "vendas": 1642.41
+      },
+      "RO": {
+        "pedidos": 12,
+        "vendas": 2653.4
+      },
+      "RN": {
+        "pedidos": 37,
+        "vendas": 8490.83
+      },
+      "RJ": {
+        "pedidos": 745,
+        "vendas": 122265.47
+      },
+      "PR": {
+        "pedidos": 316,
+        "vendas": 50355.71
+      },
+      "PI": {
+        "pedidos": 30,
+        "vendas": 5999.96
+      },
+      "PB": {
+        "pedidos": 30,
+        "vendas": 14221.13
+      },
+      "PA": {
+        "pedidos": 56,
+        "vendas": 11950.55
+      },
+      "MT": {
+        "pedidos": 60,
+        "vendas": 13008.55
+      },
+      "MS": {
+        "pedidos": 49,
+        "vendas": 10765.75
+      },
+      "MG": {
+        "pedidos": 741,
+        "vendas": 125773.31
+      },
+      "MA": {
+        "pedidos": 44,
+        "vendas": 7964.57
+      },
+      "GO": {
+        "pedidos": 112,
+        "vendas": 17381.31
+      },
+      "ES": {
+        "pedidos": 130,
+        "vendas": 20717.78
+      },
+      "DF": {
+        "pedidos": 155,
+        "vendas": 23708.66
+      },
+      "CE": {
+        "pedidos": 85,
+        "vendas": 20097.45
+      },
+      "BA": {
+        "pedidos": 215,
+        "vendas": 42439.22
+      },
+      "AP": {
+        "pedidos": 2,
+        "vendas": 247.92
+      },
+      "AM": {
+        "pedidos": 8,
+        "vendas": 1211.14
+      },
+      "AL": {
+        "pedidos": 24,
+        "vendas": 4852.93
+      },
+      "AC": {
+        "pedidos": 3,
+        "vendas": 597.26
+      }
+    },
+    "2018-05-01": {
+      "AM": {
+        "pedidos": 9,
+        "vendas": 2192.48
+      },
+      "TO": {
+        "pedidos": 16,
+        "vendas": 3314.33
+      },
+      "SP": {
+        "pedidos": 3310,
+        "vendas": 492978.52
+      },
+      "SE": {
+        "pedidos": 8,
+        "vendas": 1320.59
+      },
+      "SC": {
+        "pedidos": 233,
+        "vendas": 41815.08
+      },
+      "RS": {
+        "pedidos": 371,
+        "vendas": 60118.42
+      },
+      "RR": {
+        "pedidos": 1,
+        "vendas": 171.69
+      },
+      "RO": {
+        "pedidos": 17,
+        "vendas": 3157.51
+      },
+      "RN": {
+        "pedidos": 22,
+        "vendas": 4998.86
+      },
+      "RJ": {
+        "pedidos": 868,
+        "vendas": 147201.78
+      },
+      "AC": {
+        "pedidos": 2,
+        "vendas": 1501.42
+      },
+      "PR": {
+        "pedidos": 334,
+        "vendas": 54483.62
+      },
+      "AL": {
+        "pedidos": 19,
+        "vendas": 4393.1
+      },
+      "PI": {
+        "pedidos": 32,
+        "vendas": 8647.63
+      },
+      "PE": {
+        "pedidos": 109,
+        "vendas": 16788.28
+      },
+      "PB": {
+        "pedidos": 31,
+        "vendas": 5909.59
+      },
+      "PA": {
+        "pedidos": 42,
+        "vendas": 9160.55
+      },
+      "MT": {
+        "pedidos": 70,
+        "vendas": 14841.86
+      },
+      "MS": {
+        "pedidos": 45,
+        "vendas": 11140.71
+      },
+      "MG": {
+        "pedidos": 784,
+        "vendas": 121913.08
+      },
+      "MA": {
+        "pedidos": 32,
+        "vendas": 8589.54
+      },
+      "GO": {
+        "pedidos": 148,
+        "vendas": 27962.63
+      },
+      "ES": {
+        "pedidos": 139,
+        "vendas": 22420.84
+      },
+      "DF": {
+        "pedidos": 151,
+        "vendas": 29198.37
+      },
+      "CE": {
+        "pedidos": 75,
+        "vendas": 15170.22
+      },
+      "BA": {
+        "pedidos": 261,
+        "vendas": 43401.52
+      },
+      "AP": {
+        "pedidos": 6,
+        "vendas": 1189.93
+      }
+    },
+    "2018-04-01": {
+      "BA": {
+        "pedidos": 234,
+        "vendas": 38804.83
+      },
+      "TO": {
+        "pedidos": 19,
+        "vendas": 5370.51
+      },
+      "SP": {
+        "pedidos": 3178,
+        "vendas": 452747.67
+      },
+      "SE": {
+        "pedidos": 14,
+        "vendas": 3713.74
+      },
+      "SC": {
+        "pedidos": 251,
+        "vendas": 51809.43
+      },
+      "RS": {
+        "pedidos": 355,
+        "vendas": 61424.9
+      },
+      "RR": {
+        "pedidos": 2,
+        "vendas": 772.01
+      },
+      "RO": {
+        "pedidos": 11,
+        "vendas": 4085.72
+      },
+      "RN": {
+        "pedidos": 32,
+        "vendas": 7518.84
+      },
+      "RJ": {
+        "pedidos": 885,
+        "vendas": 144663.73
+      },
+      "PR": {
+        "pedidos": 404,
+        "vendas": 77118.9
+      },
+      "PI": {
+        "pedidos": 38,
+        "vendas": 12911.77
+      },
+      "PE": {
+        "pedidos": 120,
+        "vendas": 22240.47
+      },
+      "PB": {
+        "pedidos": 35,
+        "vendas": 5783.44
+      },
+      "PA": {
+        "pedidos": 75,
+        "vendas": 14489.05
+      },
+      "MT": {
+        "pedidos": 65,
+        "vendas": 13752.37
+      },
+      "MS": {
+        "pedidos": 50,
+        "vendas": 7053.14
+      },
+      "MG": {
+        "pedidos": 802,
+        "vendas": 130597.56
+      },
+      "MA": {
+        "pedidos": 48,
+        "vendas": 10023.53
+      },
+      "GO": {
+        "pedidos": 144,
+        "vendas": 22853.07
+      },
+      "ES": {
+        "pedidos": 144,
+        "vendas": 20181.63
+      },
+      "DF": {
+        "pedidos": 153,
+        "vendas": 22169.55
+      },
+      "CE": {
+        "pedidos": 105,
+        "vendas": 20973.95
+      },
+      "AP": {
+        "pedidos": 5,
+        "vendas": 1042.8
+      },
+      "AM": {
+        "pedidos": 6,
+        "vendas": 893.49
+      },
+      "AL": {
+        "pedidos": 30,
+        "vendas": 7201.21
+      },
+      "AC": {
+        "pedidos": 4,
+        "vendas": 588.17
+      }
+    },
+    "2018-03-01": {
+      "PE": {
+        "pedidos": 111,
+        "vendas": 27020.86
+      },
+      "TO": {
+        "pedidos": 20,
+        "vendas": 5579.63
+      },
+      "SP": {
+        "pedidos": 3150,
+        "vendas": 441724.26
+      },
+      "SE": {
+        "pedidos": 19,
+        "vendas": 3504.4
+      },
+      "SC": {
+        "pedidos": 260,
+        "vendas": 43227.23
+      },
+      "RS": {
+        "pedidos": 433,
+        "vendas": 68203.64
+      },
+      "RR": {
+        "pedidos": 6,
+        "vendas": 2643.64
+      },
+      "RO": {
+        "pedidos": 14,
+        "vendas": 3305.85
+      },
+      "RN": {
+        "pedidos": 47,
+        "vendas": 9095.81
+      },
+      "RJ": {
+        "pedidos": 956,
+        "vendas": 141230.29
+      },
+      "PR": {
+        "pedidos": 393,
+        "vendas": 60178.58
+      },
+      "PI": {
+        "pedidos": 39,
+        "vendas": 8268.54
+      },
+      "PB": {
+        "pedidos": 40,
+        "vendas": 8067.23
+      },
+      "PA": {
+        "pedidos": 74,
+        "vendas": 16405.36
+      },
+      "MT": {
+        "pedidos": 56,
+        "vendas": 10492.42
+      },
+      "MS": {
+        "pedidos": 60,
+        "vendas": 9313.79
+      },
+      "MG": {
+        "pedidos": 913,
+        "vendas": 142356.63
+      },
+      "MA": {
+        "pedidos": 57,
+        "vendas": 11033.74
+      },
+      "GO": {
+        "pedidos": 157,
+        "vendas": 23637.07
+      },
+      "ES": {
+        "pedidos": 140,
+        "vendas": 20604.41
+      },
+      "DF": {
+        "pedidos": 152,
+        "vendas": 24909.0
+      },
+      "CE": {
+        "pedidos": 100,
+        "vendas": 22544.75
+      },
+      "BA": {
+        "pedidos": 268,
+        "vendas": 45643.95
+      },
+      "AP": {
+        "pedidos": 6,
+        "vendas": 704.54
+      },
+      "AM": {
+        "pedidos": 9,
+        "vendas": 1607.24
+      },
+      "AL": {
+        "pedidos": 30,
+        "vendas": 8184.59
+      },
+      "AC": {
+        "pedidos": 2,
+        "vendas": 164.67
+      }
+    },
+    "2018-02-01": {
+      "AL": {
+        "pedidos": 27,
+        "vendas": 5680.85
+      },
+      "TO": {
+        "pedidos": 22,
+        "vendas": 3609.04
+      },
+      "SP": {
+        "pedidos": 2793,
+        "vendas": 358518.49
+      },
+      "SE": {
+        "pedidos": 16,
+        "vendas": 5103.1
+      },
+      "SC": {
+        "pedidos": 265,
+        "vendas": 38129.2
+      },
+      "RS": {
+        "pedidos": 373,
+        "vendas": 55181.7
+      },
+      "RR": {
+        "pedidos": 5,
+        "vendas": 384.01
+      },
+      "RO": {
+        "pedidos": 14,
+        "vendas": 3301.47
+      },
+      "RN": {
+        "pedidos": 23,
+        "vendas": 4144.53
+      },
+      "RJ": {
+        "pedidos": 962,
+        "vendas": 139423.88
+      },
+      "PR": {
+        "pedidos": 357,
+        "vendas": 53290.79
+      },
+      "PI": {
+        "pedidos": 35,
+        "vendas": 6009.99
+      },
+      "AC": {
+        "pedidos": 3,
+        "vendas": 299.22
+      },
+      "PE": {
+        "pedidos": 132,
+        "vendas": 20956.06
+      },
+      "PB": {
+        "pedidos": 38,
+        "vendas": 6342.92
+      },
+      "PA": {
+        "pedidos": 58,
+        "vendas": 10994.71
+      },
+      "MT": {
+        "pedidos": 68,
+        "vendas": 9847.28
+      },
+      "MS": {
+        "pedidos": 66,
+        "vendas": 10129.11
+      },
+      "MG": {
+        "pedidos": 830,
+        "vendas": 125611.27
+      },
+      "MA": {
+        "pedidos": 58,
+        "vendas": 12546.42
+      },
+      "GO": {
+        "pedidos": 154,
+        "vendas": 21570.81
+      },
+      "ES": {
+        "pedidos": 156,
+        "vendas": 20470.13
+      },
+      "DF": {
+        "pedidos": 173,
+        "vendas": 24866.85
+      },
+      "CE": {
+        "pedidos": 88,
+        "vendas": 14184.52
+      },
+      "BA": {
+        "pedidos": 226,
+        "vendas": 38294.08
+      },
+      "AP": {
+        "pedidos": 2,
+        "vendas": 1086.31
+      },
+      "AM": {
+        "pedidos": 8,
+        "vendas": 2486.6
+      }
+    },
+    "2018-01-01": {
+      "PB": {
+        "pedidos": 33,
+        "vendas": 8022.52
+      },
+      "TO": {
+        "pedidos": 17,
+        "vendas": 3336.25
+      },
+      "SP": {
+        "pedidos": 3181,
+        "vendas": 430306.48
+      },
+      "SE": {
+        "pedidos": 20,
+        "vendas": 3732.32
+      },
+      "SC": {
+        "pedidos": 324,
+        "vendas": 46373.35
+      },
+      "RS": {
+        "pedidos": 389,
+        "vendas": 57283.9
+      },
+      "RR": {
+        "pedidos": 2,
+        "vendas": 278.44
+      },
+      "RO": {
+        "pedidos": 20,
+        "vendas": 3090.1
+      },
+      "RN": {
+        "pedidos": 49,
+        "vendas": 7263.57
+      },
+      "RJ": {
+        "pedidos": 939,
+        "vendas": 144559.53
+      },
+      "PR": {
+        "pedidos": 390,
+        "vendas": 52901.86
+      },
+      "PI": {
+        "pedidos": 50,
+        "vendas": 8673.74
+      },
+      "PE": {
+        "pedidos": 107,
+        "vendas": 18536.62
+      },
+      "PA": {
+        "pedidos": 71,
+        "vendas": 16904.37
+      },
+      "MT": {
+        "pedidos": 87,
+        "vendas": 14836.97
+      },
+      "MS": {
+        "pedidos": 71,
+        "vendas": 12029.88
+      },
+      "MG": {
+        "pedidos": 899,
+        "vendas": 134886.46
+      },
+      "MA": {
+        "pedidos": 58,
+        "vendas": 11209.06
+      },
+      "GO": {
+        "pedidos": 148,
+        "vendas": 20195.66
+      },
+      "ES": {
+        "pedidos": 150,
+        "vendas": 24136.98
+      },
+      "DF": {
+        "pedidos": 141,
+        "vendas": 20756.9
+      },
+      "CE": {
+        "pedidos": 94,
+        "vendas": 16912.45
+      },
+      "BA": {
+        "pedidos": 254,
+        "vendas": 44910.78
+      },
+      "AP": {
+        "pedidos": 11,
+        "vendas": 2788.74
+      },
+      "AM": {
+        "pedidos": 13,
+        "vendas": 3433.46
+      },
+      "AL": {
+        "pedidos": 38,
+        "vendas": 6485.9
+      },
+      "AC": {
+        "pedidos": 7,
+        "vendas": 1157.89
+      }
+    },
+    "2017-12-01": {
+      "PB": {
+        "pedidos": 39,
+        "vendas": 7016.25
+      },
+      "TO": {
+        "pedidos": 15,
+        "vendas": 1892.16
+      },
+      "SP": {
+        "pedidos": 2470,
+        "vendas": 325471.54
+      },
+      "SE": {
+        "pedidos": 20,
+        "vendas": 4051.92
+      },
+      "SC": {
+        "pedidos": 197,
+        "vendas": 28485.41
+      },
+      "RS": {
+        "pedidos": 291,
+        "vendas": 49405.93
+      },
+      "RO": {
+        "pedidos": 12,
+        "vendas": 2420.06
+      },
+      "RN": {
+        "pedidos": 35,
+        "vendas": 4098.5
+      },
+      "RJ": {
+        "pedidos": 805,
+        "vendas": 137617.71
+      },
+      "PR": {
+        "pedidos": 275,
+        "vendas": 38932.73
+      },
+      "PI": {
+        "pedidos": 24,
+        "vendas": 3508.48
+      },
+      "PE": {
+        "pedidos": 105,
+        "vendas": 19733.04
+      },
+      "PA": {
+        "pedidos": 59,
+        "vendas": 12382.4
+      },
+      "MT": {
+        "pedidos": 50,
+        "vendas": 11216.21
+      },
+      "MS": {
+        "pedidos": 36,
+        "vendas": 6214.5
+      },
+      "MG": {
+        "pedidos": 717,
+        "vendas": 110879.73
+      },
+      "MA": {
+        "pedidos": 42,
+        "vendas": 7542.95
+      },
+      "GO": {
+        "pedidos": 129,
+        "vendas": 18604.18
+      },
+      "ES": {
+        "pedidos": 117,
+        "vendas": 15072.14
+      },
+      "DF": {
+        "pedidos": 138,
+        "vendas": 19932.25
+      },
+      "CE": {
+        "pedidos": 84,
+        "vendas": 13588.75
+      },
+      "BA": {
+        "pedidos": 202,
+        "vendas": 33590.76
+      },
+      "AP": {
+        "pedidos": 5,
+        "vendas": 770.56
+      },
+      "AM": {
+        "pedidos": 9,
+        "vendas": 1173.62
+      },
+      "AL": {
+        "pedidos": 14,
+        "vendas": 3390.12
+      },
+      "AC": {
+        "pedidos": 5,
+        "vendas": 1409.58
+      }
+    },
+    "2017-11-01": {
+      "AL": {
+        "pedidos": 27,
+        "vendas": 7441.47
+      },
+      "TO": {
+        "pedidos": 17,
+        "vendas": 3078.92
+      },
+      "SP": {
+        "pedidos": 3166,
+        "vendas": 417791.42
+      },
+      "SE": {
+        "pedidos": 27,
+        "vendas": 6675.18
+      },
+      "SC": {
+        "pedidos": 311,
+        "vendas": 47487.64
+      },
+      "RS": {
+        "pedidos": 436,
+        "vendas": 70115.46
+      },
+      "RR": {
+        "pedidos": 2,
+        "vendas": 151.46
+      },
+      "RO": {
+        "pedidos": 17,
+        "vendas": 7057.47
+      },
+      "RN": {
+        "pedidos": 46,
+        "vendas": 10714.03
+      },
+      "RJ": {
+        "pedidos": 1084,
+        "vendas": 176634.33
+      },
+      "PR": {
+        "pedidos": 396,
+        "vendas": 56175.87
+      },
+      "PI": {
+        "pedidos": 34,
+        "vendas": 3805.39
+      },
+      "PE": {
+        "pedidos": 131,
+        "vendas": 24380.15
+      },
+      "AC": {
+        "pedidos": 5,
+        "vendas": 945.16
+      },
+      "MT": {
+        "pedidos": 75,
+        "vendas": 13430.33
+      },
+      "PB": {
+        "pedidos": 30,
+        "vendas": 6032.7
+      },
+      "PA": {
+        "pedidos": 71,
+        "vendas": 14431.58
+      },
+      "MG": {
+        "pedidos": 989,
+        "vendas": 157768.52
+      },
+      "MA": {
+        "pedidos": 58,
+        "vendas": 13061.47
+      },
+      "GO": {
+        "pedidos": 161,
+        "vendas": 25371.12
+      },
+      "ES": {
+        "pedidos": 175,
+        "vendas": 28879.93
+      },
+      "DF": {
+        "pedidos": 172,
+        "vendas": 32232.9
+      },
+      "CE": {
+        "pedidos": 112,
+        "vendas": 22531.79
+      },
+      "BA": {
+        "pedidos": 259,
+        "vendas": 37547.03
+      },
+      "AP": {
+        "pedidos": 4,
+        "vendas": 689.17
+      },
+      "MS": {
+        "pedidos": 48,
+        "vendas": 7451.3
+      },
+      "AM": {
+        "pedidos": 10,
+        "vendas": 3001.01
+      }
+    },
+    "2017-10-01": {
+      "RN": {
+        "pedidos": 24,
+        "vendas": 5352.02
+      },
+      "AC": {
+        "pedidos": 7,
+        "vendas": 958.17
+      },
+      "AL": {
+        "pedidos": 29,
+        "vendas": 6341.59
+      },
+      "AM": {
+        "pedidos": 3,
+        "vendas": 164.56
+      },
+      "AP": {
+        "pedidos": 3,
+        "vendas": 1696.74
+      },
+      "BA": {
+        "pedidos": 182,
+        "vendas": 29671.12
+      },
+      "CE": {
+        "pedidos": 69,
+        "vendas": 16376.43
+      },
+      "DF": {
+        "pedidos": 101,
+        "vendas": 15626.4
+      },
+      "ES": {
+        "pedidos": 111,
+        "vendas": 12667.55
+      },
+      "GO": {
+        "pedidos": 114,
+        "vendas": 20256.84
+      },
+      "MA": {
+        "pedidos": 48,
+        "vendas": 12526.98
+      },
+      "MG": {
+        "pedidos": 601,
+        "vendas": 95263.46
+      },
+      "MS": {
+        "pedidos": 34,
+        "vendas": 7688.58
+      },
+      "MT": {
+        "pedidos": 53,
+        "vendas": 13032.51
+      },
+      "PA": {
+        "pedidos": 57,
+        "vendas": 8967.5
+      },
+      "PB": {
+        "pedidos": 31,
+        "vendas": 11794.46
+      },
+      "PE": {
+        "pedidos": 89,
+        "vendas": 20473.34
+      },
+      "PI": {
+        "pedidos": 27,
+        "vendas": 4955.04
+      },
+      "PR": {
+        "pedidos": 211,
+        "vendas": 39764.43
+      },
+      "RJ": {
+        "pedidos": 695,
+        "vendas": 113137.02
+      },
+      "RO": {
+        "pedidos": 14,
+        "vendas": 2385.01
+      },
+      "RR": {
+        "pedidos": 3,
+        "vendas": 525.15
+      },
+      "RS": {
+        "pedidos": 270,
+        "vendas": 44249.72
+      },
+      "SC": {
+        "pedidos": 183,
+        "vendas": 25186.21
+      },
+      "SE": {
+        "pedidos": 22,
+        "vendas": 5123.29
+      },
+      "SP": {
+        "pedidos": 1864,
+        "vendas": 262255.69
+      },
+      "TO": {
+        "pedidos": 15,
+        "vendas": 3238.07
+      }
+    },
+    "2017-09-01": {
+      "AC": {
+        "pedidos": 5,
+        "vendas": 2029.23
+      },
+      "TO": {
+        "pedidos": 18,
+        "vendas": 4530.63
+      },
+      "SP": {
+        "pedidos": 1716,
+        "vendas": 251949.98
+      },
+      "SE": {
+        "pedidos": 16,
+        "vendas": 3541.49
+      },
+      "SC": {
+        "pedidos": 162,
+        "vendas": 29544.0
+      },
+      "RS": {
+        "pedidos": 283,
+        "vendas": 43536.21
+      },
+      "RR": {
+        "pedidos": 1,
+        "vendas": 65.37
+      },
+      "RO": {
+        "pedidos": 16,
+        "vendas": 4938.28
+      },
+      "RN": {
+        "pedidos": 24,
+        "vendas": 4180.44
+      },
+      "RJ": {
+        "pedidos": 661,
+        "vendas": 109402.93
+      },
+      "PR": {
+        "pedidos": 201,
+        "vendas": 26771.9
+      },
+      "PI": {
+        "pedidos": 26,
+        "vendas": 3911.94
+      },
+      "PE": {
+        "pedidos": 82,
+        "vendas": 17658.39
+      },
+      "PB": {
+        "pedidos": 30,
+        "vendas": 7048.76
+      },
+      "PA": {
+        "pedidos": 44,
+        "vendas": 7731.74
+      },
+      "MT": {
+        "pedidos": 35,
+        "vendas": 8265.92
+      },
+      "MS": {
+        "pedidos": 33,
+        "vendas": 5667.27
+      },
+      "MG": {
+        "pedidos": 523,
+        "vendas": 85040.32
+      },
+      "MA": {
+        "pedidos": 42,
+        "vendas": 11340.69
+      },
+      "GO": {
+        "pedidos": 101,
+        "vendas": 16457.68
+      },
+      "ES": {
+        "pedidos": 94,
+        "vendas": 13314.18
+      },
+      "DF": {
+        "pedidos": 103,
+        "vendas": 15593.56
+      },
+      "CE": {
+        "pedidos": 79,
+        "vendas": 19706.43
+      },
+      "BA": {
+        "pedidos": 189,
+        "vendas": 28325.8
+      },
+      "AP": {
+        "pedidos": 2,
+        "vendas": 499.22
+      },
+      "AM": {
+        "pedidos": 9,
+        "vendas": 1518.44
+      },
+      "AL": {
+        "pedidos": 21,
+        "vendas": 5191.65
+      }
+    },
+    "2017-08-01": {
+      "PA": {
+        "pedidos": 65,
+        "vendas": 17374.1
+      },
+      "TO": {
+        "pedidos": 15,
+        "vendas": 2518.52
+      },
+      "SP": {
+        "pedidos": 1832,
+        "vendas": 230199.67
+      },
+      "SE": {
+        "pedidos": 20,
+        "vendas": 5657.63
+      },
+      "SC": {
+        "pedidos": 162,
+        "vendas": 26188.45
+      },
+      "RS": {
+        "pedidos": 313,
+        "vendas": 40960.6
+      },
+      "RO": {
+        "pedidos": 15,
+        "vendas": 2815.97
+      },
+      "RN": {
+        "pedidos": 20,
+        "vendas": 3273.35
+      },
+      "RJ": {
+        "pedidos": 592,
+        "vendas": 91604.41
+      },
+      "PR": {
+        "pedidos": 231,
+        "vendas": 34734.15
+      },
+      "PI": {
+        "pedidos": 24,
+        "vendas": 5707.62
+      },
+      "PE": {
+        "pedidos": 91,
+        "vendas": 15758.78
+      },
+      "PB": {
+        "pedidos": 16,
+        "vendas": 3053.11
+      },
+      "MT": {
+        "pedidos": 40,
+        "vendas": 7831.89
+      },
+      "MS": {
+        "pedidos": 25,
+        "vendas": 4468.64
+      },
+      "MG": {
+        "pedidos": 487,
+        "vendas": 71051.24
+      },
+      "MA": {
+        "pedidos": 41,
+        "vendas": 7992.77
+      },
+      "GO": {
+        "pedidos": 98,
+        "vendas": 17463.99
+      },
+      "ES": {
+        "pedidos": 99,
+        "vendas": 15384.63
+      },
+      "DF": {
+        "pedidos": 90,
+        "vendas": 11747.95
+      },
+      "CE": {
+        "pedidos": 75,
+        "vendas": 12957.67
+      },
+      "BA": {
+        "pedidos": 168,
+        "vendas": 33341.66
+      },
+      "AP": {
+        "pedidos": 3,
+        "vendas": 384.78
+      },
+      "AM": {
+        "pedidos": 5,
+        "vendas": 1483.41
+      },
+      "AL": {
+        "pedidos": 19,
+        "vendas": 9675.5
+      },
+      "AC": {
+        "pedidos": 4,
+        "vendas": 765.83
+      }
+    },
+    "2017-07-01": {
+      "PE": {
+        "pedidos": 80,
+        "vendas": 12409.38
+      },
+      "TO": {
+        "pedidos": 1,
+        "vendas": 126.58
+      },
+      "SP": {
+        "pedidos": 1747,
+        "vendas": 214428.1
+      },
+      "SE": {
+        "pedidos": 15,
+        "vendas": 1834.3
+      },
+      "SC": {
+        "pedidos": 163,
+        "vendas": 22873.88
+      },
+      "RS": {
+        "pedidos": 276,
+        "vendas": 35359.97
+      },
+      "RR": {
+        "pedidos": 1,
+        "vendas": 225.01
+      },
+      "RO": {
+        "pedidos": 11,
+        "vendas": 1535.67
+      },
+      "RN": {
+        "pedidos": 28,
+        "vendas": 4178.25
+      },
+      "RJ": {
+        "pedidos": 614,
+        "vendas": 92942.22
+      },
+      "PR": {
+        "pedidos": 213,
+        "vendas": 29695.34
+      },
+      "PI": {
+        "pedidos": 20,
+        "vendas": 2938.77
+      },
+      "PB": {
+        "pedidos": 27,
+        "vendas": 5991.37
+      },
+      "PA": {
+        "pedidos": 41,
+        "vendas": 6769.96
+      },
+      "MT": {
+        "pedidos": 41,
+        "vendas": 11348.93
+      },
+      "MS": {
+        "pedidos": 25,
+        "vendas": 4305.84
+      },
+      "MG": {
+        "pedidos": 479,
+        "vendas": 65959.66
+      },
+      "MA": {
+        "pedidos": 40,
+        "vendas": 7941.34
+      },
+      "GO": {
+        "pedidos": 81,
+        "vendas": 10576.97
+      },
+      "ES": {
+        "pedidos": 86,
+        "vendas": 9114.39
+      },
+      "DF": {
+        "pedidos": 79,
+        "vendas": 13101.13
+      },
+      "CE": {
+        "pedidos": 56,
+        "vendas": 9833.21
+      },
+      "BA": {
+        "pedidos": 165,
+        "vendas": 23824.77
+      },
+      "AP": {
+        "pedidos": 1,
+        "vendas": 292.39
+      },
+      "AM": {
+        "pedidos": 5,
+        "vendas": 951.4
+      },
+      "AL": {
+        "pedidos": 17,
+        "vendas": 3029.69
+      },
+      "AC": {
+        "pedidos": 5,
+        "vendas": 794.4
+      }
+    },
+    "2017-06-01": {
+      "AM": {
+        "pedidos": 1,
+        "vendas": 204.84
+      },
+      "TO": {
+        "pedidos": 9,
+        "vendas": 4441.12
+      },
+      "SP": {
+        "pedidos": 1428,
+        "vendas": 201359.56
+      },
+      "SE": {
+        "pedidos": 9,
+        "vendas": 1806.32
+      },
+      "SC": {
+        "pedidos": 128,
+        "vendas": 16171.86
+      },
+      "RS": {
+        "pedidos": 228,
+        "vendas": 28975.87
+      },
+      "RR": {
+        "pedidos": 3,
+        "vendas": 175.18
+      },
+      "RO": {
+        "pedidos": 13,
+        "vendas": 2311.06
+      },
+      "RN": {
+        "pedidos": 15,
+        "vendas": 1684.82
+      },
+      "RJ": {
+        "pedidos": 436,
+        "vendas": 63796.8
+      },
+      "PR": {
+        "pedidos": 173,
+        "vendas": 25955.73
+      },
+      "PI": {
+        "pedidos": 14,
+        "vendas": 2626.96
+      },
+      "AL": {
+        "pedidos": 10,
+        "vendas": 1276.02
+      },
+      "PE": {
+        "pedidos": 51,
+        "vendas": 8946.18
+      },
+      "PB": {
+        "pedidos": 25,
+        "vendas": 7404.7
+      },
+      "AC": {
+        "pedidos": 4,
+        "vendas": 510.27
+      },
+      "PA": {
+        "pedidos": 39,
+        "vendas": 6918.59
+      },
+      "MT": {
+        "pedidos": 25,
+        "vendas": 4948.29
+      },
+      "MS": {
+        "pedidos": 29,
+        "vendas": 4442.66
+      },
+      "MG": {
+        "pedidos": 373,
+        "vendas": 55371.0
+      },
+      "MA": {
+        "pedidos": 17,
+        "vendas": 2358.23
+      },
+      "GO": {
+        "pedidos": 83,
+        "vendas": 11299.08
+      },
+      "ES": {
+        "pedidos": 82,
+        "vendas": 12485.38
+      },
+      "DF": {
+        "pedidos": 70,
+        "vendas": 9836.95
+      },
+      "CE": {
+        "pedidos": 48,
+        "vendas": 11701.27
+      },
+      "BA": {
+        "pedidos": 121,
+        "vendas": 23897.9
+      },
+      "AP": {
+        "pedidos": 2,
+        "vendas": 369.74
+      }
+    },
+    "2017-05-01": {
+      "AP": {
+        "pedidos": 5,
+        "vendas": 1508.84
+      },
+      "TO": {
+        "pedidos": 18,
+        "vendas": 2671.87
+      },
+      "SP": {
+        "pedidos": 1557,
+        "vendas": 204599.7
+      },
+      "SE": {
+        "pedidos": 12,
+        "vendas": 1059.53
+      },
+      "SC": {
+        "pedidos": 161,
+        "vendas": 27349.55
+      },
+      "RS": {
+        "pedidos": 213,
+        "vendas": 33275.99
+      },
+      "RR": {
+        "pedidos": 2,
+        "vendas": 317.97
+      },
+      "RO": {
+        "pedidos": 9,
+        "vendas": 1232.24
+      },
+      "RN": {
+        "pedidos": 19,
+        "vendas": 5582.87
+      },
+      "RJ": {
+        "pedidos": 519,
+        "vendas": 85793.22
+      },
+      "PR": {
+        "pedidos": 225,
+        "vendas": 36312.11
+      },
+      "PI": {
+        "pedidos": 26,
+        "vendas": 6956.46
+      },
+      "PE": {
+        "pedidos": 70,
+        "vendas": 13116.38
+      },
+      "PB": {
+        "pedidos": 19,
+        "vendas": 3498.43
+      },
+      "PA": {
+        "pedidos": 36,
+        "vendas": 6570.7
+      },
+      "MT": {
+        "pedidos": 40,
+        "vendas": 7680.93
+      },
+      "MS": {
+        "pedidos": 30,
+        "vendas": 4673.59
+      },
+      "MG": {
+        "pedidos": 443,
+        "vendas": 59491.97
+      },
+      "MA": {
+        "pedidos": 33,
+        "vendas": 4505.09
+      },
+      "GO": {
+        "pedidos": 92,
+        "vendas": 19125.7
+      },
+      "ES": {
+        "pedidos": 102,
+        "vendas": 15665.24
+      },
+      "DF": {
+        "pedidos": 66,
+        "vendas": 9249.77
+      },
+      "CE": {
+        "pedidos": 65,
+        "vendas": 12655.48
+      },
+      "BA": {
+        "pedidos": 135,
+        "vendas": 20470.65
+      },
+      "AM": {
+        "pedidos": 10,
+        "vendas": 1442.17
+      },
+      "AL": {
+        "pedidos": 28,
+        "vendas": 5729.73
+      },
+      "AC": {
+        "pedidos": 9,
+        "vendas": 2382.64
+      }
+    },
+    "2017-04-01": {
+      "PE": {
+        "pedidos": 41,
+        "vendas": 5385.75
+      },
+      "TO": {
+        "pedidos": 14,
+        "vendas": 3814.47
+      },
+      "SP": {
+        "pedidos": 969,
+        "vendas": 152307.7
+      },
+      "SE": {
+        "pedidos": 13,
+        "vendas": 3340.07
+      },
+      "SC": {
+        "pedidos": 111,
+        "vendas": 14006.97
+      },
+      "RS": {
+        "pedidos": 143,
+        "vendas": 22376.82
+      },
+      "RR": {
+        "pedidos": 2,
+        "vendas": 106.89
+      },
+      "RO": {
+        "pedidos": 9,
+        "vendas": 1327.07
+      },
+      "RN": {
+        "pedidos": 11,
+        "vendas": 1565.25
+      },
+      "RJ": {
+        "pedidos": 362,
+        "vendas": 66462.39
+      },
+      "PR": {
+        "pedidos": 118,
+        "vendas": 18456.13
+      },
+      "PI": {
+        "pedidos": 14,
+        "vendas": 2870.02
+      },
+      "PB": {
+        "pedidos": 21,
+        "vendas": 3562.68
+      },
+      "PA": {
+        "pedidos": 39,
+        "vendas": 6108.21
+      },
+      "MT": {
+        "pedidos": 56,
+        "vendas": 4521.73
+      },
+      "MS": {
+        "pedidos": 15,
+        "vendas": 2208.44
+      },
+      "MG": {
+        "pedidos": 290,
+        "vendas": 47117.43
+      },
+      "MA": {
+        "pedidos": 30,
+        "vendas": 4123.17
+      },
+      "GO": {
+        "pedidos": 41,
+        "vendas": 6577.33
+      },
+      "ES": {
+        "pedidos": 48,
+        "vendas": 6452.68
+      },
+      "DF": {
+        "pedidos": 36,
+        "vendas": 8598.36
+      },
+      "CE": {
+        "pedidos": 48,
+        "vendas": 6973.49
+      },
+      "BA": {
+        "pedidos": 96,
+        "vendas": 21622.07
+      },
+      "AM": {
+        "pedidos": 14,
+        "vendas": 1176.23
+      },
+      "AL": {
+        "pedidos": 25,
+        "vendas": 5375.17
+      },
+      "AC": {
+        "pedidos": 5,
+        "vendas": 1351.51
+      }
+    },
+    "2017-03-01": {
+      "AL": {
+        "pedidos": 10,
+        "vendas": 1421.5
+      },
+      "TO": {
+        "pedidos": 8,
+        "vendas": 899.19
+      },
+      "SP": {
+        "pedidos": 1085,
+        "vendas": 161606.17
+      },
+      "SE": {
+        "pedidos": 27,
+        "vendas": 4957.31
+      },
+      "SC": {
+        "pedidos": 110,
+        "vendas": 24677.49
+      },
+      "RS": {
+        "pedidos": 153,
+        "vendas": 24296.69
+      },
+      "RR": {
+        "pedidos": 2,
+        "vendas": 330.81
+      },
+      "RO": {
+        "pedidos": 16,
+        "vendas": 2523.68
+      },
+      "RN": {
+        "pedidos": 15,
+        "vendas": 2104.6
+      },
+      "RJ": {
+        "pedidos": 418,
+        "vendas": 64617.1
+      },
+      "PR": {
+        "pedidos": 143,
+        "vendas": 18679.13
+      },
+      "PI": {
+        "pedidos": 13,
+        "vendas": 2636.76
+      },
+      "PE": {
+        "pedidos": 45,
+        "vendas": 9225.6
+      },
+      "AC": {
+        "pedidos": 2,
+        "vendas": 530.18
+      },
+      "PB": {
+        "pedidos": 16,
+        "vendas": 4936.41
+      },
+      "PA": {
+        "pedidos": 37,
+        "vendas": 9212.7
+      },
+      "MT": {
+        "pedidos": 16,
+        "vendas": 2702.55
+      },
+      "MS": {
+        "pedidos": 21,
+        "vendas": 7036.84
+      },
+      "MG": {
+        "pedidos": 381,
+        "vendas": 52138.6
+      },
+      "MA": {
+        "pedidos": 24,
+        "vendas": 2896.21
+      },
+      "GO": {
+        "pedidos": 54,
+        "vendas": 10613.5
+      },
+      "ES": {
+        "pedidos": 48,
+        "vendas": 6006.23
+      },
+      "DF": {
+        "pedidos": 62,
+        "vendas": 8198.35
+      },
+      "CE": {
+        "pedidos": 28,
+        "vendas": 7523.97
+      },
+      "BA": {
+        "pedidos": 95,
+        "vendas": 18885.75
+      },
+      "AP": {
+        "pedidos": 3,
+        "vendas": 412.89
+      },
+      "AM": {
+        "pedidos": 5,
+        "vendas": 793.39
+      }
+    },
+    "2017-02-01": {
+      "AC": {
+        "pedidos": 3,
+        "vendas": 597.4
+      },
+      "TO": {
+        "pedidos": 7,
+        "vendas": 939.55
+      },
+      "SP": {
+        "pedidos": 684,
+        "vendas": 92521.94
+      },
+      "SE": {
+        "pedidos": 14,
+        "vendas": 2404.98
+      },
+      "SC": {
+        "pedidos": 61,
+        "vendas": 8179.51
+      },
+      "RS": {
+        "pedidos": 106,
+        "vendas": 18396.14
+      },
+      "RR": {
+        "pedidos": 2,
+        "vendas": 108.74
+      },
+      "RO": {
+        "pedidos": 11,
+        "vendas": 2111.7
+      },
+      "RN": {
+        "pedidos": 9,
+        "vendas": 648.61
+      },
+      "RJ": {
+        "pedidos": 269,
+        "vendas": 39012.97
+      },
+      "PR": {
+        "pedidos": 121,
+        "vendas": 21821.49
+      },
+      "PI": {
+        "pedidos": 13,
+        "vendas": 3721.85
+      },
+      "PE": {
+        "pedidos": 23,
+        "vendas": 4042.97
+      },
+      "PB": {
+        "pedidos": 19,
+        "vendas": 2544.3
+      },
+      "PA": {
+        "pedidos": 25,
+        "vendas": 10958.21
+      },
+      "MT": {
+        "pedidos": 17,
+        "vendas": 3583.36
+      },
+      "MS": {
+        "pedidos": 11,
+        "vendas": 7927.16
+      },
+      "MG": {
+        "pedidos": 281,
+        "vendas": 35978.34
+      },
+      "MA": {
+        "pedidos": 11,
+        "vendas": 1195.23
+      },
+      "GO": {
+        "pedidos": 27,
+        "vendas": 3000.67
+      },
+      "ES": {
+        "pedidos": 36,
+        "vendas": 5428.79
+      },
+      "DF": {
+        "pedidos": 24,
+        "vendas": 10867.46
+      },
+      "CE": {
+        "pedidos": 15,
+        "vendas": 2483.53
+      },
+      "BA": {
+        "pedidos": 72,
+        "vendas": 8635.5
+      },
+      "AP": {
+        "pedidos": 2,
+        "vendas": 707.2
+      },
+      "AM": {
+        "pedidos": 8,
+        "vendas": 1122.54
+      },
+      "AL": {
+        "pedidos": 15,
+        "vendas": 2967.87
+      }
+    },
+    "2017-01-01": {
+      "PB": {
+        "pedidos": 2,
+        "vendas": 463.13
+      },
+      "TO": {
+        "pedidos": 2,
+        "vendas": 676.86
+      },
+      "SP": {
+        "pedidos": 317,
+        "vendas": 47371.44
+      },
+      "SE": {
+        "pedidos": 4,
+        "vendas": 381.78
+      },
+      "SC": {
+        "pedidos": 32,
+        "vendas": 7301.31
+      },
+      "RS": {
+        "pedidos": 56,
+        "vendas": 13743.9
+      },
+      "RO": {
+        "pedidos": 3,
+        "vendas": 825.51
+      },
+      "RN": {
+        "pedidos": 9,
+        "vendas": 1268.13
+      },
+      "RJ": {
+        "pedidos": 116,
+        "vendas": 14933.38
+      },
+      "PR": {
+        "pedidos": 65,
+        "vendas": 6483.24
+      },
+      "PI": {
+        "pedidos": 7,
+        "vendas": 1453.98
+      },
+      "PE": {
+        "pedidos": 9,
+        "vendas": 2151.93
+      },
+      "PA": {
+        "pedidos": 13,
+        "vendas": 2777.77
+      },
+      "MT": {
+        "pedidos": 11,
+        "vendas": 2303.68
+      },
+      "MS": {
+        "pedidos": 1,
+        "vendas": 170.36
+      },
+      "MG": {
+        "pedidos": 112,
+        "vendas": 18831.37
+      },
+      "MA": {
+        "pedidos": 9,
+        "vendas": 986.43
+      },
+      "GO": {
+        "pedidos": 18,
+        "vendas": 4658.29
+      },
+      "ES": {
+        "pedidos": 12,
+        "vendas": 2645.79
+      },
+      "DF": {
+        "pedidos": 13,
+        "vendas": 2104.75
+      },
+      "CE": {
+        "pedidos": 9,
+        "vendas": 1266.13
+      },
+      "BA": {
+        "pedidos": 26,
+        "vendas": 4511.37
+      },
+      "AL": {
+        "pedidos": 2,
+        "vendas": 454.36
+      },
+      "AC": {
+        "pedidos": 2,
+        "vendas": 723.15
+      }
+    },
+    "2016-12-01": {
+      "PR": {
+        "pedidos": 1,
+        "vendas": 19.62
+      }
+    },
+    "2016-10-01": {
+      "SP": {
+        "pedidos": 117,
+        "vendas": 16844.59
+      },
+      "SE": {
+        "pedidos": 3,
+        "vendas": 345.92
+      },
+      "SC": {
+        "pedidos": 11,
+        "vendas": 2730.42
+      },
+      "RS": {
+        "pedidos": 25,
+        "vendas": 4715.64
+      },
+      "RR": {
+        "pedidos": 1,
+        "vendas": 69.02
+      },
+      "RN": {
+        "pedidos": 4,
+        "vendas": 881.34
+      },
+      "RJ": {
+        "pedidos": 65,
+        "vendas": 13407.58
+      },
+      "PR": {
+        "pedidos": 21,
+        "vendas": 2580.35
+      },
+      "PI": {
+        "pedidos": 1,
+        "vendas": 246.09
+      },
+      "PE": {
+        "pedidos": 7,
+        "vendas": 1688.49
+      },
+      "PB": {
+        "pedidos": 1,
+        "vendas": 74.74
+      },
+      "AL": {
+        "pedidos": 2,
+        "vendas": 129.9
+      },
+      "DF": {
+        "pedidos": 6,
+        "vendas": 1200.11
+      },
+      "CE": {
+        "pedidos": 8,
+        "vendas": 2011.77
+      },
+      "BA": {
+        "pedidos": 4,
+        "vendas": 995.34
+      },
+      "PA": {
+        "pedidos": 4,
+        "vendas": 1283.09
+      },
+      "MT": {
+        "pedidos": 3,
+        "vendas": 954.07
+      },
+      "MG": {
+        "pedidos": 41,
+        "vendas": 5642.97
+      },
+      "MA": {
+        "pedidos": 4,
+        "vendas": 998.85
+      },
+      "GO": {
+        "pedidos": 10,
+        "vendas": 1223.06
+      },
+      "ES": {
+        "pedidos": 4,
+        "vendas": 1067.14
+      }
+    },
+    "2016-09-01": {
+      "RS": {
+        "pedidos": 1,
+        "vendas": 75.06
+      },
+      "SP": {
+        "pedidos": 1,
+        "vendas": 40.95
+      },
+      "RR": {
+        "pedidos": 1,
+        "vendas": 136.23
+      }
+    }
+  },
+  "total_geral": {
+    "pedidos": 103886,
+    "vendas": 16008872.120000001,
+    "clientes": 99440,
+    "cidades": 4310
+  },
+  "atualizacao": "2026-08-29T14:02:35.930188"
+}
